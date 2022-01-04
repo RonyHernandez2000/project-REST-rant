@@ -9,11 +9,11 @@ function show (data) {
             <h1>{data.place.city}</h1>
             <h1>{data.place.state}</h1>
             <h1>{data.place.cuisine}</h1>
-            <h1>{data.place.pic}</h1>
-            <a href={`/places/${data.i}/edit`} className="btn btn-warning"> 
+            <img src="{data.place.pic}" alt='image' ></img>
+            <a href={`/places/${data.id}/edit`} className="btn btn-warning"> 
              Edit
             </a>     
-            <form method="POST" action={`/places/${data.i}?_method=DELETE`}> 
+            <form method="POST" action={`/places/${data.id}?_method=DELETE`}> 
             <button type="submit" className="btn btn-danger">
             Delete
             </button>
